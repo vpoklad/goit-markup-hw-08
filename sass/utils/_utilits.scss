@@ -46,16 +46,16 @@ html{
   }
   
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
   }
-  .section--no-padding-top {
-    padding-top: 0;
-  }
+  
 
   .section-title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
@@ -63,10 +63,14 @@ html{
     margin-bottom: 50px;
   }
   .container {
-    width: 1200px;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+      
+    }
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    
   }
   %list {
     list-style: none;

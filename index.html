@@ -15,28 +15,38 @@
 <body>
     <header class="header">
         <div class="container-flex">
-             <nav class="navigation">
-                <a href="./" class="logo"><span class="logo__accent">Web</span>Studio</a>
-                <ul class="navigation__list">
-                    <li class="navigation__item" ><a href="./" class="navigation__link navigation__link--curent">Студия</a></li>
-                    <li class="navigation__item" ><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
-                    <li class="navigation__item" ><a href="#" class="navigation__link">Контакты</a></li>
-                </ul>
-            </nav>
-            
-            <div class="contacts-header">
+            <a href="./" class="logo"><span class="logo__accent">Web</span>Studio</a>
+            <div class="menu-wrapper">
+                <nav class="navigation">                
+                    <ul class="navigation__list">
+                        <li class="navigation__item" ><a href="./" class="navigation__link navigation__link--curent">Студия</a></li>
+                        <li class="navigation__item" ><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
+                        <li class="navigation__item" ><a href="#" class="navigation__link">Контакты</a></li>
+                    </ul>
+                </nav>
                 
-                <a href="mailto:info@devstudio.com" class="contacts-header__link">
-                    <svg class="contacts-header__icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                                    
-                   info@devstudio.com</a>
-                <a href="tel:+380961111111" class="contacts-header__link">
-                    <svg class="contacts-header__icon" width = "10" height = "16"><use href="./images/icons.svg#icon-smartphone"></use></svg>
-                     +38 096 111 11 11</a>
+                <div class="contacts-header">
+                    
+                    <a href="mailto:info@devstudio.com" class="contacts-header__link">
+                        <svg class="contacts-header__icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                                        
+                       info@devstudio.com</a>
+                    <a href="tel:+380961111111" class="contacts-header__link">
+                        <svg class="contacts-header__icon" width = "10" height = "16"><use href="./images/icons.svg#icon-smartphone"></use></svg>
+                         +38 096 111 11 11</a>
+                </div>
             </div>
-        </div>
+            <button type="button" class="button-burger-menu" aria-label="меню навигации" data-menu-button>
+                <svg class="icon" width = "24" height = "16">
+                    <use href="./images/icons.svg#icon-burger-menu">
+                       
+                    </use>
+                </svg>
+            </button>
+            </div>
+             
         
         
     </header>
@@ -101,7 +111,7 @@
             </div> <!-- /container -->            
         </section>
         <!-- Секция "чем мы занимаемся" -->
-        <section class="section section--no-padding-top">
+        <section class="section section--specialization">
             <div class="container">
                 
                 <h2 class="section-title">Чем мы занимаемся</h2>

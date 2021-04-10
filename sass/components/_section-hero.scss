@@ -3,8 +3,9 @@
     margin-right: auto;
     padding-top: 200px;
     padding-bottom: 94px;
+    width: 100%;
     max-width: 1600px;
-    height: 600px;
+    height: 480px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -19,14 +20,14 @@
 
   .section-hero__inner{
     margin: 0 auto;
-    max-width: 696px;
+    max-width: 360px;
     text-align: center;
   }
   .section-hero__title {
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
-    text-align: center;
+    // text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #fff;

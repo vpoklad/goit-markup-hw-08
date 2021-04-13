@@ -59,9 +59,13 @@ color: #fff;
 }
 
 .button-burger-menu{
+  z-index: 6;
+  padding: 0;
+  margin: 0;
   width: 40px;
   height: 40px;
   background-color: transparent;
+  color: $title-color;
   border: 0;
   margin-left: auto;
   &:hover, &:focus{
@@ -69,3 +73,14 @@ color: #fff;
   }
 }
 
+.button-burger-menu .icon-close {
+  display: none;
+}
+
+.button-burger-menu.is-open .icon-close {
+  display: block;
+}
+
+.button-burger-menu.is-open .icon-burger {
+  display: none;
+}

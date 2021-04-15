@@ -55,6 +55,32 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero_background-desktop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .section-hero {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/hero_background-desktop-x2.jpg);
+      }
+    }
+  }
+}
+
 .section-hero__inner {
   margin: 0 auto;
   max-width: 360px;

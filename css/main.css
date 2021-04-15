@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -81,6 +83,12 @@ img {
 @media screen and (min-width: 768px) {
   .container, .container-flex, .footer__container {
     width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container, .container-flex, .footer__container {
+    width: 1200px;
   }
 }
 
@@ -222,6 +230,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts-header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
 .contacts-header__link {
   display: inline-flex;
   align-items: center;
@@ -258,6 +273,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contacts-header__link:not(:last-child) {
+    margin-bottom: 0;
     margin-right: 50px;
   }
 }
@@ -491,6 +507,22 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_background-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-hero .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_background-desktop-x2.jpg);
+  }
+}
+
 .section-hero__inner {
   margin: 0 auto;
   max-width: 360px;
@@ -525,6 +557,13 @@ img {
 @media screen and (max-width: 767px) {
   .features-list__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
   }
 }
 
@@ -633,6 +672,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .employee-cards__item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .employee-cards__item:not(:last-child) {
     margin-bottom: 30px;
@@ -674,6 +719,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 6 * 30px) / 6);
+  }
+}
+
 .clients-list__link {
   display: flex;
   justify-content: center;
@@ -705,9 +756,8 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer__container {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -834,7 +884,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  overflow-y: scroll;
+  overflow-y: auto;
   transform: translate(-50%, -50%) scale(1);
   max-width: 450px;
   width: 100%;
@@ -844,6 +894,14 @@ img {
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    overflow-y: unset;
+  }
 }
 
 .backdrop--is-hidden .modal {
@@ -985,6 +1043,13 @@ img {
 @media (min-width: 768px) {
   .filter-list {
     justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
   }
 }
 
@@ -1002,28 +1067,20 @@ img {
   .cards-set {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .cards-set__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin: -15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .cards-set__item {
-    flex-basis: calc((100% - 60px) / 2);
-    margin-left: 30px;
-    margin-top: 30px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .cards-set__item {
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 3 * 30px) / 3);
   }
 }
 

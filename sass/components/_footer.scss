@@ -9,13 +9,13 @@
 
   @media screen and (max-width: 1199px) {
     text-align: center;
-    @media screen and (min-width: 768px) {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      justify-content: center;
-    }
+  }
+  @media screen and (min-width: 768px) {
+    // width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
   }
 }
 
@@ -25,9 +25,6 @@
   }
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
-    // &:not(:last-child) {
-    //   // margin-right: 30px;
-    // }
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((50% - 45px) / 2);

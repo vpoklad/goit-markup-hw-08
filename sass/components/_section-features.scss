@@ -1,7 +1,8 @@
 .features-list {
   @extend %list;
   @media screen and (min-width: 768px) {
-    margin: -15px;
+    margin-top: -30px;
+    margin-left: -30px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -9,17 +10,13 @@
 
 .features-list__item {
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
+    flex-basis: calc((100% - 30px * 2) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
   }
-  &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
-    }
-  }
+
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 4 * 30px) / 4);
-    margin: 15px;
+    flex-basis: calc((100% - 30px * 4) / 4);
   }
 }
 

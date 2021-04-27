@@ -6,8 +6,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
-    display: flex;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 
   @extend %list;
@@ -15,11 +15,12 @@
 
 .employee-cards__item {
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
+    flex-basis: calc((100% - 30px * 2) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 4 * 30px) / 4);
+    flex-basis: calc((100% - 30px * 4) / 4);
   }
 
   text-align: center;
@@ -35,7 +36,8 @@
   }
 }
 .employee-cards__content {
-  padding: 30px 32px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .employee-cards__name {

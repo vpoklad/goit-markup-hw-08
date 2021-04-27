@@ -6,6 +6,7 @@ html {
 *::before {
   box-sizing: inherit;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -65,13 +66,13 @@ img {
 }
 .container {
   @media screen and (min-width: 480px) {
-    width: 480px;
+    max-width: 480px;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    max-width: 1200px;
   }
   margin-left: auto;
   margin-right: auto;
